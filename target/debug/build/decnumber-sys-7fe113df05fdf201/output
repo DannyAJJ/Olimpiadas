@@ -1,0 +1,138 @@
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+DEBUG = Some("true")
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decimal128.o" "-c" "decnumber/decimal128.c"
+decimal128.c
+decnumber/decimal128.c(378): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decimal128.c(317): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal128.c(318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal128.c(322): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decimal64.o" "-c" "decnumber/decimal64.c"
+decimal64.c
+decnumber/decimal64.c(376): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decimal64.c(327): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal64.c(328): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal64.c(332): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal64.c(821): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decimal32.o" "-c" "decnumber/decimal32.c"
+decimal32.c
+decnumber/decimal32.c(315): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decimal32.c(272): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal32.c(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decimal32.c(277): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decContext.o" "-c" "decnumber/decContext.c"
+decContext.c
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decNumber.o" "-c" "decnumber/decNumber.c"
+decNumber.c
+decnumber/decNumber.c(355): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(635): warning C4244: '-=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(657): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(835): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(1222): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(1848): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(2554): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(3280): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(3640): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decNumber.c(3641): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decNumber.c(3648): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+decnumber/decNumber.c(5065): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(6544): warning C4244: 'return': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(6548): warning C4244: 'return': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(6571): warning C4244: 'return': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(6755): warning C4244: 'return': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(6783): warning C4244: 'return': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+decnumber/decNumber.c(7646): warning C4244: 'función': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decSingle.o" "-c" "decnumber/decSingle.c"
+decSingle.c
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(268): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(410): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(471): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1169): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1252): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1253): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1257): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1535): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1539): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decDouble.o" "-c" "decnumber/decDouble.c"
+decDouble.c
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(268): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(410): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(471): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1169): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1252): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1253): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1257): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1535): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1539): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decBasic.c(379): warning C4456: la declaración de 'div' oculta la declaración local anterior
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decBasic.c(172): note: vea la declaración de 'div'
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decQuad.o" "-c" "decnumber/decQuad.c"
+decQuad.c
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(268): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(410): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(471): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1169): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1252): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1253): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1257): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1535): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decCommon.c(1539): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decBasic.c(379): warning C4456: la declaración de 'div' oculta la declaración local anterior
+C:\Users\58424\.cargo\registry\src\index.crates.io-6f17d22bba15001f\decnumber-sys-0.1.5\decnumber\decBasic.c(172): note: vea la declaración de 'div'
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-W4" "-DDECLITEND=1" "-FoC:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decPacked.o" "-c" "decnumber/decPacked.c"
+decPacked.c
+decnumber/decPacked.c(164): warning C4244: '=': conversión de '__int64' a 'int32_t'; posible pérdida de datos
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\lib.exe" "-out:C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\libdecnumber.a" "-nologo" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decimal128.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decimal64.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decimal32.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decContext.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decNumber.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decSingle.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decDouble.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decQuad.o" "C:\\Users\\58424\\Documents\\Proyectos\\Rust\\Olimpiadas\\target\\debug\\build\\decnumber-sys-7fe113df05fdf201\\out\\lib\\decnumber/decPacked.o"
+exit code: 0
+cargo:rustc-link-search=native=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64
+cargo:rustc-link-lib=static=decnumber
+cargo:rustc-link-search=native=C:\Users\58424\Documents\Proyectos\Rust\Olimpiadas\target\debug\build\decnumber-sys-7fe113df05fdf201\out\lib
+cargo:root=C:\Users\58424\Documents\Proyectos\Rust\Olimpiadas\target\debug\build\decnumber-sys-7fe113df05fdf201\out
