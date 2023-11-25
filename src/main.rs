@@ -8,44 +8,44 @@ fn main() {
 struct Linea<'h> {
     nombre:&'h str,
     apellido:&'h str,
-    n_1:f32,
-    n_2:f32,
-    n_3:f32,
-    n_4:f32,
-    n_5:f32,
-    n_6:f32,
-    n_7:f32,
-    n_8:f32,
-    n_9:f32,
-    n_10:f32,
+    n_1:f64,
+    n_2:f64,
+    n_3:f64,
+    n_4:f64,
+    n_5:f64,
+    n_6:f64,
+    n_7:f64,
+    n_8:f64,
+    n_9:f64,
+    n_10:f64,
 }
 struct Puntuaciones{
-    n_1: f32,
-    n_2: f32,
-    n_3: f32,
-    n_4: f32,
-    n_5: f32,
-    mayorn: f32,
-    menorn: f32,
-    suma: f32,
-    total: f32,
+    n_1: f64,
+    n_2: f64,
+    n_3: f64,
+    n_4: f64,
+    n_5: f64,
+    mayorn: f64,
+    menorn: f64,
+    suma: f64,
+    total: f64,
 }
 struct Limites {
-    mayor: f32,
-    menor: f32,
+    mayor: f64,
+    menor: f64,
 }
-fn mayor<'j>(x: [f32;5])->Limites{
+fn mayor<'j>(x: [f64;5])->Limites{
     let mut x1:[i32;5]= [0,0,0,0,0];
     for y in 0..5 {
-        x1[y] = (x[y] * 100 as f32) as i32;
+        x1[y] = (x[y] * 100 as f64) as i32;
     }
     let pequeno = min(min(min(x1[0],x1[1]),min(x1[2], x1[3])),x1[4]);
     let grande = max(max(max(x1[0], x1[1]),max(x1[2], x1[3])),x1[4]);
     
     
     //println!("{}  {}", grande,pequeno);
-    let pequeno = pequeno as f32 /100 as f32;
-    let grande = grande as f32 /100 as f32; 
+    let pequeno = pequeno as f64 /100 as f64;
+    let grande = grande as f64 /100 as f64; 
     let limites = Limites {mayor: (grande),menor:(pequeno)};
    limites
 }
@@ -70,17 +70,17 @@ fn calculos<'h>(lalista: Linea)->Puntuaciones{
     let mut z = 0;
     for x in 0..10 {
         if (x%2) == 0 {
-            numero[x] = (((numero[x]*0.4)*100 as f32).round())/100 as f32;
+            numero[x] = (((numero[x]*0.4)*100 as f64).round())/100 as f64;
         }else {
-            numero[x] = (((numero[x]*0.6)*100 as f32).round())/100 as f32;
+            numero[x] = (((numero[x]*0.6)*100 as f64).round())/100 as f64;
         }
         //println!("{}",numero[x]);
     }
-    let mut numerof: [f32;5]= [0.0,0.0,0.0,0.0,0.0];
+    let mut numerof: [f64;5]= [0.0,0.0,0.0,0.0,0.0];
     let mut numeroff = 0.0;
     loop {
         if y==5 {break;}
-        numerof[y] = (((numero[z]+numero[z+1])*100 as f32).round())/100 as f32;
+        numerof[y] = (((numero[z]+numero[z+1])*100 as f64).round())/100 as f64;
         numeroff = numeroff + numerof[y];
         y+=1;
         z+=2;
@@ -90,13 +90,13 @@ fn calculos<'h>(lalista: Linea)->Puntuaciones{
         println!("{}",numerof[x]);
     }*/
     let limites: Limites = mayor(numerof);
-    let totalf = ((((numeroff - limites.mayor - limites.menor) / 3 as f32)*100 as f32).round())/100 as f32;
+    let totalf = ((((numeroff - limites.mayor - limites.menor) / 3 as f64)*100 as f64).round())/100 as f64;
     let puntuacion1:Puntuaciones =Puntuaciones { n_1: (numerof[0]), n_2: (numerof[1]), n_3: (numerof[2]), n_4: (numerof[3]), n_5: (numerof[4]), mayorn: (limites.mayor), menorn: (limites.menor),suma: (numeroff), total: (totalf) };
     puntuacion1
 }
 
 fn construir<'e>(valores:[&'e str;12]) ->Linea{
-    let linea_lista = Linea { nombre: valores[0], apellido: valores[1], n_1: valores[2].parse::<f32>().unwrap(), n_2: valores[3].parse::<f32>().unwrap(), n_3: valores[4].parse::<f32>().unwrap(), n_4: valores[5].parse::<f32>().unwrap(), n_5: valores[6].parse::<f32>().unwrap(), n_6: valores[7].parse::<f32>().unwrap(), n_7: valores[8].parse::<f32>().unwrap(), n_8: valores[9].parse::<f32>().unwrap(), n_9: valores[10].parse::<f32>().unwrap(), n_10: valores[11].parse::<f32>().unwrap() };
+    let linea_lista = Linea { nombre: valores[0], apellido: valores[1], n_1: valores[2].parse::<f64>().unwrap(), n_2: valores[3].parse::<f64>().unwrap(), n_3: valores[4].parse::<f64>().unwrap(), n_4: valores[5].parse::<f64>().unwrap(), n_5: valores[6].parse::<f64>().unwrap(), n_6: valores[7].parse::<f64>().unwrap(), n_7: valores[8].parse::<f64>().unwrap(), n_8: valores[9].parse::<f64>().unwrap(), n_9: valores[10].parse::<f64>().unwrap(), n_10: valores[11].parse::<f64>().unwrap() };
     linea_lista
 }
 fn separar_espacios<'d>(linea: &'d str) -> [&'d str;12]{
